@@ -1,0 +1,21 @@
+{
+    "name": "aura/pubnub-laravel",
+    "description": "A Laravel 4 wrapper for PubNub's php library",
+    "authors": [
+        {
+            "name": "Caleb Fidecaro",
+            "email": "caleb@auraeq.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.1.*",
+	    "pubnub/pubnub": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Aura\\PubnubLaravel": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
