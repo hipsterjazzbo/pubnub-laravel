@@ -1,8 +1,8 @@
 <?php namespace Aura\PubnubLaravel;
 
-use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Config;
 use Pubnub\Pubnub;
+use Illuminate\Support\Facades\Config;
+use Illuminate\Support\ServiceProvider;
 
 class PubnubLaravelServiceProvider extends ServiceProvider {
 
@@ -32,7 +32,7 @@ class PubnubLaravelServiceProvider extends ServiceProvider {
 	{
 		$this->app['pubnub'] = $this->app->share(function ($app)
 		{
-			return new Pubnub(Config::get('pubnub-laravel::publish_key'), Config::get('pubnub-laravel::subscribe_key'), Config::get('pubnub-laravel::secret_key'), Config::get('pubnub-laravel::cipher_key'), Config::get('pubnub-laravel::ssl'), Config::get('pubnub-laravel::origin'), Config::get('pubnub-laravel::pem_path'));
+			return new PubnubLaravel();
 		});
 	}
 

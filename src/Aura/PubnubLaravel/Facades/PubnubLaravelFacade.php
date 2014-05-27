@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Facade;
 
-class PubnubLaravel extends Facade {
+class PubnubLaravelFacade extends Facade {
 
 	protected static function getFacadeAccessor() { return 'pubnub'; }
 } 
