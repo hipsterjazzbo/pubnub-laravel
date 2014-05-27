@@ -46,7 +46,7 @@ class PubnubLaravel {
 	 * @param string $message
 	 * @param string $channel
 	 *
-	 * @throws Exceptions\PubnubPublishFailedException
+	 * @throws \Aura\PubnubLaravel\Exceptions\PubnubPublishFailedException
 	 * @return bool
 	 */
 	public function publish($message, $channel = NULL)
@@ -75,7 +75,7 @@ class PubnubLaravel {
 	 * @param string   $channel
 	 * @param bool     $presence
 	 *
-	 * @throws Exceptions\PubnubSubscribeFailedException
+	 * @throws \Aura\PubnubLaravel\Exceptions\PubnubSubscribeFailedException
 	 * @return bool
 	 */
 	public function subscribe(Closure $callback, $channel = NULL, $presence = FALSE)
@@ -114,7 +114,7 @@ class PubnubLaravel {
 	 * @param callable $callback
 	 * @param array    $channel
 	 *
-	 * @throws Exceptions\PubnubSubscribeFailedException
+	 * @throws \Aura\PubnubLaravel\Exceptions\PubnubSubscribeFailedException
 	 * @return bool
 	 */
 	public function presence(Closure $callback, $channel = NULL)
