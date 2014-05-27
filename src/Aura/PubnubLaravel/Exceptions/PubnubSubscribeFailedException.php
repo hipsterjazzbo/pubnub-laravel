@@ -1,5 +1,3 @@
 <?php namespace Aura\PubnubLaravel\Exceptions;
 
-use \Exception;
-
-class PubnubSubscribeFailedException extends Exception {}
+class PubnubSubscribeFailedException extends PubnubException {}
