@@ -12,6 +12,7 @@ Two methods have not been wrapped or exposed: `history()` and `detailedHistory()
 Here are some things still to do. Got some time and a good brain? Submit a pull request!
 
 - [ ] Write some tests. Not sure how best to do this, we'd need to mock the Pubnub calls somehow.
+- [ ] You can't work with more than one channel at once; this is a restriction of the base library, but maybe one that could be worked around?
 - [ ] I'm not an expert in this sort of blocking architecture. There may be a better way to implement the `subscribe()` method, but I'm not sure what it is at this stage.
 - [ ] Maybe figure out the history and detailedHistory methods.
 - [ ] The `presence()` method doesn't seem to do anything, at least in my brief testing. I think it's just borken? On that note:
