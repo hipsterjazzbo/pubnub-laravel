@@ -1,6 +1,8 @@
 {
     "name": "aura/pubnub-laravel",
     "description": "A Laravel 4 wrapper for PubNub's php library",
+	"keywords" : ["laravel", "pubnub", "realtime"],
+	"license" : "MIT",
     "authors": [
         {
             "name": "Caleb Fidecaro",
