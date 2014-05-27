@@ -18,6 +18,5 @@
         "psr-0": {
             "Aura\\PubnubLaravel": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
