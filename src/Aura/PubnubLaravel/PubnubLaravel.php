@@ -3,6 +3,7 @@
 use \Closure;
 use \Pubnub\Pubnub;
 use \Illuminate\Support\Facades\Config;
+use \Aura\PubnubLaravel\Exceptions\PubnubChannelException;
 use \Aura\PubnubLaravel\Exceptions\PubnubPublishFailedException;
 use \Aura\PubnubLaravel\Exceptions\PubnubSubscribeFailedException;
 
@@ -35,10 +36,16 @@ class PubnubLaravel {
 	/**
 	 * @param string $overrideChannel
 	 *
-	 * @return mixed
+	 * @return string
+	 * @throws \Aura\PubnubLaravel\Exceptions\PubnubChannelException
 	 */
 	public function getChannel($overrideChannel = NULL)
 	{
+		if (is_null($overrideChannel) && is_null($this->channel))
+		{
+			throw new PubnubChannelException('You must either set a channel using Pubnub::setChannel() or using the $channel parameter');
+		}
+
 		return $overrideChannel ?: $this->channel;
 	}
 

@@ -60,7 +60,7 @@ To set the channel:
 Pubnub::setChannel('channel');
 ```
 
-You can also set to channel for each method individually, as outlined below.
+You can also set to channel for each method individually, as outlined below. If you try to use a method without having a channel set, a `PubnubChannelException` will be thrown.
 
 ---
 
