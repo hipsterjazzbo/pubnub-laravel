@@ -12,12 +12,11 @@
     "require": {
         "php": ">=5.3.0",
         "illuminate/support": "~4.1",
-	    "pubnub/pubnub": "dev-master"
+	    "pubnub/pubnub": "*@dev"
     },
     "autoload": {
         "psr-0": {
             "Aura\\PubnubLaravel": "src/"
         }
-    },
-	"minimum-stability" : "dev"
+    }
 }
