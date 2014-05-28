@@ -9,10 +9,16 @@
             "email": "caleb@auraeq.com"
         }
     ],
+	"repositories" : {
+		"pubnub" : {
+			"type" : "git",
+			"url"  : "https://github.com/pubnub/php-composer"
+		}
+	},
     "require": {
         "php": ">=5.3.0",
         "illuminate/support": "~4.1",
-	    "pubnub/pubnub": "*@dev"
+	    "pubnub/pubnub": "dev-master"
     },
     "autoload": {
         "psr-0": {
