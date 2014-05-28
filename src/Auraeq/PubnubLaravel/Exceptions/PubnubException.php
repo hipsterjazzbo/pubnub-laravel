@@ -1,4 +1,4 @@
-<?php namespace Aura\PubnubLaravel\Exceptions;
+<?php namespace Auraeq\PubnubLaravel\Exceptions;
 
 use \Exception;
 

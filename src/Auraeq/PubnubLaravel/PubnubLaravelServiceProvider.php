@@ -1,4 +1,4 @@
-<?php namespace Aura\PubnubLaravel;
+<?php namespace Auraeq\PubnubLaravel;
 
 use Pubnub\Pubnub;
 use Illuminate\Support\Facades\Config;
@@ -20,7 +20,7 @@ class PubnubLaravelServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('aura/pubnub-laravel');
+		$this->package('auraeq/pubnub-laravel');
 	}
 
 	/**

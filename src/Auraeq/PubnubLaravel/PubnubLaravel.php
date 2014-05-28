@@ -1,11 +1,11 @@
-<?php namespace Aura\PubnubLaravel;
+<?php namespace Auraeq\PubnubLaravel;
 
 use \Closure;
 use \Pubnub\Pubnub;
 use \Illuminate\Support\Facades\Config;
-use \Aura\PubnubLaravel\Exceptions\PubnubChannelException;
-use \Aura\PubnubLaravel\Exceptions\PubnubPublishFailedException;
-use \Aura\PubnubLaravel\Exceptions\PubnubSubscribeFailedException;
+use \Auraeq\PubnubLaravel\Exceptions\PubnubChannelException;
+use \Auraeq\PubnubLaravel\Exceptions\PubnubPublishFailedException;
+use \Auraeq\PubnubLaravel\Exceptions\PubnubSubscribeFailedException;
 
 class PubnubLaravel {
 
@@ -37,7 +37,7 @@ class PubnubLaravel {
 	 * @param string $overrideChannel
 	 *
 	 * @return string
-	 * @throws \Aura\PubnubLaravel\Exceptions\PubnubChannelException
+	 * @throws \Auraeq\PubnubLaravel\Exceptions\PubnubChannelException
 	 */
 	public function getChannel($overrideChannel = NULL)
 	{
@@ -53,7 +53,7 @@ class PubnubLaravel {
 	 * @param string $message
 	 * @param string $channel
 	 *
-	 * @throws \Aura\PubnubLaravel\Exceptions\PubnubPublishFailedException
+	 * @throws \Auraeq\PubnubLaravel\Exceptions\PubnubPublishFailedException
 	 * @return bool
 	 */
 	public function publish($message, $channel = NULL)
@@ -82,7 +82,7 @@ class PubnubLaravel {
 	 * @param string   $channel
 	 * @param bool     $presence
 	 *
-	 * @throws \Aura\PubnubLaravel\Exceptions\PubnubSubscribeFailedException
+	 * @throws \Auraeq\PubnubLaravel\Exceptions\PubnubSubscribeFailedException
 	 * @return bool
 	 */
 	public function subscribe(Closure $callback, $channel = NULL, $presence = FALSE)
@@ -121,7 +121,7 @@ class PubnubLaravel {
 	 * @param callable $callback
 	 * @param array    $channel
 	 *
-	 * @throws \Aura\PubnubLaravel\Exceptions\PubnubSubscribeFailedException
+	 * @throws \Auraeq\PubnubLaravel\Exceptions\PubnubSubscribeFailedException
 	 * @return bool
 	 */
 	public function presence(Closure $callback, $channel = NULL)

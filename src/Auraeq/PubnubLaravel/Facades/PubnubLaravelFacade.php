@@ -1,4 +1,4 @@
-<?php namespace Aura\PubnubLaravel\Facades;
+<?php namespace Auraeq\PubnubLaravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

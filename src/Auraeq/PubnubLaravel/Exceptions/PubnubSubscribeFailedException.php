@@ -1,3 +1,3 @@
-<?php namespace Aura\PubnubLaravel\Exceptions;
+<?php namespace Auraeq\PubnubLaravel\Exceptions;
 
 class PubnubSubscribeFailedException extends PubnubException {}
