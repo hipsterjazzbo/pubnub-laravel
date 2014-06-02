@@ -1,7 +1,7 @@
 pubnub-laravel
 ==============
 
-**NOTE** This is an alpha release.
+**NOTE** This is a beta release.
 
 This is a nice, clean, OOP Laravel 4 wrapper for [Pubnub's terrible php library](https://github.com/pubnub/php-composer).
 
