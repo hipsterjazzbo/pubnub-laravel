@@ -70,7 +70,7 @@ To publish a message:
 Pubnub::publish($message[, $channel]);
 ```
 
-Returns `true` on success or throws `\Aura\PubnubLaravel\Exceptions\PubnubPublishFailedException` on failure.
+Returns `true` on success or throws `PubnubPublishFailedException` on failure.
 
 ---
 
@@ -82,7 +82,7 @@ To subscribe to a message:
 Pubnub::subscribe(Closure $callback[, $channel]);
 ```
 
-Returns `true` on success or throws `\Aura\PubnubLaravel\Exceptions\PubnubSubscribeFailedException` on failure.
+Returns `true` on success or throws `PubnubSubscribeFailedException` on failure.
 
 There is also a `presence()` method with the same signature that is supposed to notify you of arrivals/departures in the channel you're subscribed to, but it doesn't seem to work (see note above).
 
