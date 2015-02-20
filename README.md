@@ -25,7 +25,7 @@ To install, add the package to your `composer.json`:
 ```json
 "require" : {
     ...
-    "aura/pubnub-laravel" : "dev-master"
+    "auraeq/pubnub-laravel" : "dev-master"
     ...
 }
 ```
